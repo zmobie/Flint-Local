@@ -23,6 +23,12 @@
 		A1279FB3161523FA008ED8E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1279F8E161523FA008ED8E7 /* Foundation.framework */; };
 		A1279FBB161523FA008ED8E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1279FB9161523FA008ED8E7 /* InfoPlist.strings */; };
 		A1279FBE161523FA008ED8E7 /* FlintLocalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1279FBD161523FA008ED8E7 /* FlintLocalTests.m */; };
+		A1593F831617C4CD000498A5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1593F821617C4CD000498A5 /* FacebookSDK.framework */; };
+		A1593F861617C4DD000498A5 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A1593F851617C4DD000498A5 /* FacebookSDKResources.bundle */; };
+		A1593F881617C544000498A5 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A1593F871617C544000498A5 /* FBUserSettingsViewResources.bundle */; };
+		A1593F8A1617C54D000498A5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1593F891617C54D000498A5 /* Social.framework */; };
+		A1593F8C1617C551000498A5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1593F8B1617C551000498A5 /* AdSupport.framework */; };
+		A1593F8E1617C55B000498A5 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1593F8D1617C55A000498A5 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,12 @@
 		A1279FBA161523FA008ED8E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A1279FBC161523FA008ED8E7 /* FlintLocalTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlintLocalTests.h; sourceTree = "<group>"; };
 		A1279FBD161523FA008ED8E7 /* FlintLocalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlintLocalTests.m; sourceTree = "<group>"; };
+		A1593F821617C4CD000498A5 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		A1593F851617C4DD000498A5 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		A1593F871617C544000498A5 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		A1593F891617C54D000498A5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A1593F8B1617C551000498A5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A1593F8D1617C55A000498A5 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +77,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1593F8E1617C55B000498A5 /* Accounts.framework in Frameworks */,
+				A1593F8C1617C551000498A5 /* AdSupport.framework in Frameworks */,
+				A1593F8A1617C54D000498A5 /* Social.framework in Frameworks */,
 				A1279F8D161523FA008ED8E7 /* UIKit.framework in Frameworks */,
 				A1279F8F161523FA008ED8E7 /* Foundation.framework in Frameworks */,
 				A1279F91161523FA008ED8E7 /* CoreGraphics.framework in Frameworks */,
+				A1593F831617C4CD000498A5 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +103,9 @@
 		A1279F7D161523FA008ED8E7 = {
 			isa = PBXGroup;
 			children = (
+				A1593F8D1617C55A000498A5 /* Accounts.framework */,
+				A1593F8B1617C551000498A5 /* AdSupport.framework */,
+				A1593F891617C54D000498A5 /* Social.framework */,
 				A1279F92161523FA008ED8E7 /* FlintLocal */,
 				A1279FB6161523FA008ED8E7 /* FlintLocalTests */,
 				A1279F8B161523FA008ED8E7 /* Frameworks */,
@@ -106,6 +125,9 @@
 		A1279F8B161523FA008ED8E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1593F871617C544000498A5 /* FBUserSettingsViewResources.bundle */,
+				A1593F851617C4DD000498A5 /* FacebookSDKResources.bundle */,
+				A1593F821617C4CD000498A5 /* FacebookSDK.framework */,
 				A1279F8C161523FA008ED8E7 /* UIKit.framework */,
 				A1279F8E161523FA008ED8E7 /* Foundation.framework */,
 				A1279F90161523FA008ED8E7 /* CoreGraphics.framework */,
@@ -236,6 +258,8 @@
 				A1279FA1161523FA008ED8E7 /* Default@2x.png in Resources */,
 				A1279FA3161523FA008ED8E7 /* Default-568h@2x.png in Resources */,
 				A1279FA6161523FA008ED8E7 /* MainStoryboard.storyboard in Resources */,
+				A1593F861617C4DD000498A5 /* FacebookSDKResources.bundle in Resources */,
+				A1593F881617C544000498A5 /* FBUserSettingsViewResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,9 +398,14 @@
 		A1279FC2161523FA008ED8E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Documents/FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlintLocal/FlintLocal-Prefix.pch";
 				INFOPLIST_FILE = "FlintLocal/FlintLocal-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -385,9 +414,14 @@
 		A1279FC3161523FA008ED8E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Documents/FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlintLocal/FlintLocal-Prefix.pch";
 				INFOPLIST_FILE = "FlintLocal/FlintLocal-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -446,6 +480,7 @@
 				A1279FC3161523FA008ED8E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1279FC4161523FA008ED8E7 /* Build configuration list for PBXNativeTarget "FlintLocalTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +489,7 @@
 				A1279FC6161523FA008ED8E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
