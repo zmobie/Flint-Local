@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *authButton;
+@property (weak, nonatomic) IBOutlet UIButton *queryButton;
+@property (weak, nonatomic) IBOutlet UIButton *multiQueryButton;
+
+@property (strong, nonatomic) NSArray *events;
 
 @end

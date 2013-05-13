@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39B631AC173FDD630074514B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B631AB173FDD630074514B /* libsqlite3.dylib */; };
+		39B631AE173FDD6C0074514B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B631AD173FDD6C0074514B /* Security.framework */; };
+		39B631B11740084E0074514B /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B631B01740084E0074514B /* EventsViewController.m */; };
+		39B631B517400C450074514B /* SingleEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B631B417400C450074514B /* SingleEventViewController.m */; };
+		39B631B8174070E20074514B /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B631B7174070E20074514B /* EventCell.m */; };
 		A1279F8D161523FA008ED8E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1279F8C161523FA008ED8E7 /* UIKit.framework */; };
 		A1279F8F161523FA008ED8E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1279F8E161523FA008ED8E7 /* Foundation.framework */; };
 		A1279F91161523FA008ED8E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1279F90161523FA008ED8E7 /* CoreGraphics.framework */; };
@@ -42,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39B631AB173FDD630074514B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		39B631AD173FDD6C0074514B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		39B631AF1740084E0074514B /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		39B631B01740084E0074514B /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		39B631B317400C450074514B /* SingleEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleEventViewController.h; sourceTree = "<group>"; };
+		39B631B417400C450074514B /* SingleEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleEventViewController.m; sourceTree = "<group>"; };
+		39B631B6174070E20074514B /* EventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCell.h; sourceTree = "<group>"; };
+		39B631B7174070E20074514B /* EventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCell.m; sourceTree = "<group>"; };
 		A1279F88161523FA008ED8E7 /* FlintLocal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlintLocal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1279F8C161523FA008ED8E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A1279F8E161523FA008ED8E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B631AE173FDD6C0074514B /* Security.framework in Frameworks */,
+				39B631AC173FDD630074514B /* libsqlite3.dylib in Frameworks */,
 				A1593F8E1617C55B000498A5 /* Accounts.framework in Frameworks */,
 				A1593F8C1617C551000498A5 /* AdSupport.framework in Frameworks */,
 				A1593F8A1617C54D000498A5 /* Social.framework in Frameworks */,
@@ -103,9 +118,6 @@
 		A1279F7D161523FA008ED8E7 = {
 			isa = PBXGroup;
 			children = (
-				A1593F8D1617C55A000498A5 /* Accounts.framework */,
-				A1593F8B1617C551000498A5 /* AdSupport.framework */,
-				A1593F891617C54D000498A5 /* Social.framework */,
 				A1279F92161523FA008ED8E7 /* FlintLocal */,
 				A1279FB6161523FA008ED8E7 /* FlintLocalTests */,
 				A1279F8B161523FA008ED8E7 /* Frameworks */,
@@ -125,6 +137,11 @@
 		A1279F8B161523FA008ED8E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				39B631AD173FDD6C0074514B /* Security.framework */,
+				39B631AB173FDD630074514B /* libsqlite3.dylib */,
+				A1593F8D1617C55A000498A5 /* Accounts.framework */,
+				A1593F8B1617C551000498A5 /* AdSupport.framework */,
+				A1593F891617C54D000498A5 /* Social.framework */,
 				A1593F871617C544000498A5 /* FBUserSettingsViewResources.bundle */,
 				A1593F851617C4DD000498A5 /* FacebookSDKResources.bundle */,
 				A1593F821617C4CD000498A5 /* FacebookSDK.framework */,
@@ -139,12 +156,18 @@
 		A1279F92161523FA008ED8E7 /* FlintLocal */ = {
 			isa = PBXGroup;
 			children = (
+				39B631AF1740084E0074514B /* EventsViewController.h */,
+				39B631B01740084E0074514B /* EventsViewController.m */,
 				A1279F9B161523FA008ED8E7 /* AppDelegate.h */,
 				A1279F9C161523FA008ED8E7 /* AppDelegate.m */,
 				A1279FA4161523FA008ED8E7 /* MainStoryboard.storyboard */,
+				39B631B6174070E20074514B /* EventCell.h */,
+				39B631B7174070E20074514B /* EventCell.m */,
 				A1279FA7161523FA008ED8E7 /* ViewController.h */,
 				A1279FA8161523FA008ED8E7 /* ViewController.m */,
 				A1279F93161523FA008ED8E7 /* Supporting Files */,
+				39B631B317400C450074514B /* SingleEventViewController.h */,
+				39B631B417400C450074514B /* SingleEventViewController.m */,
 			);
 			path = FlintLocal;
 			sourceTree = "<group>";
@@ -297,6 +320,9 @@
 				A1279F99161523FA008ED8E7 /* main.m in Sources */,
 				A1279F9D161523FA008ED8E7 /* AppDelegate.m in Sources */,
 				A1279FA9161523FA008ED8E7 /* ViewController.m in Sources */,
+				39B631B11740084E0074514B /* EventsViewController.m in Sources */,
+				39B631B517400C450074514B /* SingleEventViewController.m in Sources */,
+				39B631B8174070E20074514B /* EventCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
