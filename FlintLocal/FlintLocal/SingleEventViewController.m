@@ -7,6 +7,7 @@
 //
 
 #import "SingleEventViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface SingleEventViewController ()
 
@@ -40,6 +41,34 @@
         });
     });
 
+}
+
+-(void)rsvpEvent
+{
+    NSNumber *eventID = self.event[@"eid"];
+    NSString *graphPath = [[eventID stringValue] stringByAppendingString:@"/attending"];
+    FBRequest *request = [FBRequest requestForPostWithGraphPath:graphPath graphObject:nil];
+    [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+        if (!error) {
+            //do something
+            NSLog(@"success! %@", result);
+        } else {
+            NSLog(@"error: %@", error);
+        }
+    }];
+}
+
+- (IBAction)attendingButtonPressed:(id)sender {
+    
+    BOOL permissionGranted = [FBSession.activeSession.permissions containsObject:@"rsvp_event"];
+    
+    if (permissionGranted) {
+        [self rsvpEvent];
+    } else {
+        [[FBSession activeSession] requestNewPublishPermissions:@[@"rsvp_event"] defaultAudience:FBSessionDefaultAudienceEveryone completionHandler:^(FBSession *session, NSError *error) {
+            [self rsvpEvent];
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning
